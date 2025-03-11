@@ -1,5 +1,5 @@
-CONTAINER_NAME=larmic-golang-starter-example
-IMAGE_NAME=larmic/golang-starter-example
+CONTAINER_NAME=azure-ad-authenticator
+IMAGE_NAME=larmic/azure-ad-authenticator
 IMAGE_TAG=latest
 
 # external url that will be called by /api/external
@@ -9,9 +9,9 @@ help: ## Outputs this help screen
 	@grep -E '(^[a-zA-Z0-9_-]+:.*?##.*$$)|(^##)' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}{printf "\033[32m%-30s\033[0m %s\n", $$1, $$2}' | sed -e 's/\[32m##/[33m/'
 
 ## —— Build 🏗️———————————————————————————————————————————————————————————————————————————————————————————————————
-go-build-binary: ## Builds binary (executable) in ./bin/golang-starter (used architecture of local machine)
+go-build-binary: ## Builds binary (executable) in ./bin/azure-ad-authenticator (used architecture of local machine)
 	go mod download
-	go build -a -o ./bin/golang-starter .
+	go build -a -o ./bin/azure-ad-authenticator .
 
 docker-build: ## Builds multi arch docker image including automated tests
 	@echo "Remove docker image if already exists"

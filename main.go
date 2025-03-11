@@ -2,7 +2,7 @@ package main
 
 import (
 	_ "embed"
-	"larmic/golang-starter/internal/routers"
+	"larmic/azure-ad-authenticator/internal/routers"
 	"log"
 	"os"
 )

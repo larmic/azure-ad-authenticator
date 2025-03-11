@@ -2,7 +2,7 @@ package handlers
 
 import (
 	"github.com/gin-gonic/gin"
-	"larmic/golang-starter/internal/client"
+	"larmic/azure-ad-authenticator/internal/client"
 	"net/http"
 )
 

@@ -1,4 +1,4 @@
-module larmic/golang-starter
+module larmic/azure-ad-authenticator
 
 go 1.24.1
 
