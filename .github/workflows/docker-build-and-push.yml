@@ -6,7 +6,7 @@ on:
       - 'main'
 
 env:
-  IMAGE_NAME: larmic/golang-starter-example
+  IMAGE_NAME: larmic/azure-ad-authenticator
 
 # cancel jobs in current pr if new commit is done
 concurrency:
